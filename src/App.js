@@ -19,20 +19,4 @@ export default () => {
   );
 };
 
-// import React, { Fragment } from 'react'
-// import {List, List2,List3} from './Component/List/List'
-// // import List3 from './Component/List/List'
 
-
-
-// const App = () => {
-//   return (
-//     <Fragment>
-//       <List/>
-//       <List2/>
-//       <List3/>
-//     </Fragment>
-//   )
-// }
-
-// export default App
