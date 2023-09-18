@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import TodoApp from "./Component/TodoApp";
+import Header from "./Component/Header/Header";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import About from "./Component/About/About";
 
-function App() {
+export default () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
-export default App;
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" exact element={<TodoApp />} />
+        <Route path="/about" element={<About/>} />
+        
+      </Routes>
+    </Router>
+
+  );
+};
+
+// import React, { Fragment } from 'react'
+// import {List, List2,List3} from './Component/List/List'
+// // import List3 from './Component/List/List'
+
+
+
+// const App = () => {
+//   return (
+//     <Fragment>
+//       <List/>
+//       <List2/>
+//       <List3/>
+//     </Fragment>
+//   )
+// }
+
+// export default App

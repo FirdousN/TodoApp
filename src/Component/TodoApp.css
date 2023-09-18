@@ -1,0 +1,73 @@
+
+body{
+    margin:0;
+    background-color: #056679;
+    font-family: sans-serif;
+
+}
+
+.todo-container{
+    width: 350px;
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+}
+
+h1{
+    margin: 0;
+    margin-bottom: 15px;
+    color: #20a5bf75;
+}
+
+.input-section {
+    background-color:#056679;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow:0 7px 6px #0000003b;  
+}
+
+.input-section input {
+    border-radius: 5px;
+    border: 1px solid #1a7e91;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #056679;
+    outline: none;
+    color:#08869e
+}
+
+input::placeholder{
+    color: #08869e;
+}
+
+ul{
+    padding: 0px;
+    text-align: left;
+}
+
+ul li{
+    display: flex ;
+    list-style: none;
+    background-color: #056679;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: #08869e;
+    box-shadow: 0 4px 6px #00000066;
+}
+
+ul li i{
+    text-align: right;
+    flex: 1;
+    cursor: pointer;
+}
+
+.addButton{
+    background-color: #08869e; /* Set the background color to blue */
+    color: white; /* Set the text color to white */
+    border: none; /* Remove the border */
+    padding: 10px 20px; /* Add padding to the button */
+    margin-top: 10px; /* Add left margin to separate it from the input field */
+    cursor: pointer; /* Add a pointer cursor on hover */
+}
