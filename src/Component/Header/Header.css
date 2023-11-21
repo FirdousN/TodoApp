@@ -5,11 +5,12 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 15px 20px #0000005e;
 }
 
 header a{
-    color: #0c7588;
+    color: #4aa9bb;
     text-decoration: none;
-    margin:0  15px ;
-    font-weight: bold;
+    margin: 0 10px;
+    font-weight: bolder;
 }

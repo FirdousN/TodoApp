@@ -4,7 +4,7 @@ import Header from "./Component/Header/Header";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import About from "./Component/About/About";
 
-export default () => {
+const App = () => {
   return (
 
     <Router>
@@ -12,11 +12,10 @@ export default () => {
       <Routes>
         <Route path="/" exact element={<TodoApp />} />
         <Route path="/about" element={<About/>} />
-        
       </Routes>
     </Router>
 
   );
 };
 
-
+export default App;

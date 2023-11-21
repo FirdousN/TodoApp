@@ -45,12 +45,6 @@ export default class TodoApp extends Component {
     deleteItem = (key) => {
         console.log(key, this.state.items[key]);
 
-        // const allItems = this.state.items;
-        // allItems.splice(key , 1);
-        // this.setState({
-        //     items: allItems
-        // })
-
         // Advanced way
         this.setState({
             items: this.state.items.filter((data, index) => index !== key),
@@ -66,6 +60,12 @@ export default class TodoApp extends Component {
         });
 
     };
+
+    clearItem = () =>{
+        this.setState({
+            items : []
+        })
+    }
 
     render() {
         const { input, items, editIndex } = this.state;
@@ -84,6 +84,7 @@ export default class TodoApp extends Component {
                     <button className="addButton" onClick={this.storeItems}>
                         {editIndex !== -1 ? "EDIT" : "ADD"}
                     </button>
+                    <button className="addButton" onClick={this.clearItem}>Clear</button>
                 </form>
                 <ul>
                     {items.map((data, index) => (
@@ -91,6 +92,7 @@ export default class TodoApp extends Component {
                             {data}
                             <i className="fa-solid fa-pen-to-square" onClick={() => this.editItem(index)}></i>
                             <i className="fa-solid fa-trash-can" onClick={() => this.deleteItem(index)}></i>
+
                         </li>
                     ))}
                 </ul>
